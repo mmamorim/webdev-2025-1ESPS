@@ -1,5 +1,5 @@
 # Git / Github 
-[*ver em pdf*](https://github.com/mmamorim/webdev-2025-1ESPS/git-github.pdf)
+[*ver em pdf*](https://mmamorim.github.io/webdev-24-2/git-github.pdf)
 
 ![](./assets/git-hub.png)
 

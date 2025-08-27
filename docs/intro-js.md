@@ -1,5 +1,5 @@
 # Intro Javascript
-[*ver em pdf*](https://github.com/mmamorim/webdev-2025-1ESPS/intro-js.pdf)
+[*ver em pdf*](https://mmamorim.github.io/webdev-24-2/intro-js.pdf)
 
 ![](./assets/javascript.jpeg)
 
