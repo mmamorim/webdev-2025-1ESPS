@@ -18,11 +18,14 @@
 
 <body>
     <h1>Jogo dos Palitinhos</h1>
+    Seu Nome:
+    <input type="text" id="cxaNome" />
+    <button onclick="alterarNome()">Alterar Nome</button>
+
     <table>
         <tr>
             <td class="box">
                 <h2 id="nomeJogador">EU</h2>
-                <button onclick="alterarNome()">Alterar Nome</button>
                 <h3>
                     Palitos: <span id="qtdeEu">3</span>
                 </h3>
@@ -40,18 +43,15 @@
 
     <script>
 
-        //let nome = prompt("Digite seu nome:")
-        //console.log("nome: ",nome)
-
-
         function clicouBotaoJogar() {
             console.log("Estou aqui....")
         }
 
         function alterarNome() {
-            let elem = document.getElementById("nomeJogador")
-            elem.innerText = prompt("Digite seu nome:")
-            console.log("elem", elem)
+            let elemInput = document.getElementById("cxaNome")
+            let elemH2 = document.getElementById("nomeJogador")
+            let nome = elemInput.value
+            elemH2.innerText = nome 
         }
 
     </script>
