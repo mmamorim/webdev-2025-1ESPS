@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,12 +15,13 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Jogo dos Palitinhos</h1>
     <table>
         <tr>
             <td class="box">
-                <h2>EU</h2>
+                <h2 id="nomeJogador">EU</h2>
                 <h3>
                     Palitos: <span id="qtdeEu">3</span>
                 </h3>
@@ -36,8 +38,15 @@
     </table>
 
     <script>
-        x = 5
-        console.log(x)
+
+        let nome = prompt("Digite seu nome:")
+        console.log("nome: ",nome)
+
+        let elem = document.getElementById("nomeJogador")
+        elem.innerText = nome
+        console.log("elem", elem)
+
     </script>
 </body>
+
 </html>

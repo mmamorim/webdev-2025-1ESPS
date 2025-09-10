@@ -6,6 +6,21 @@
 
 # Conhecendo Javascript 
 
+### Antes
+
+parseInt()
+parseFloat()
+++ e -- 
+
+exemplo:
+
+~~~js
+    let idade = prompt("Digite sua idade:")
+    idade = parseInt(idade)
+    idade++
+    console.log("Sua idade é: "+idade)
+~~~
+
 ### 🎮 **Vamos Aprender JavaScript com o Jogo dos Palitinhos?**
 
 Que tal aprender **JavaScript** de um jeito divertido? 
