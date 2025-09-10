@@ -22,10 +22,11 @@
         <tr>
             <td class="box">
                 <h2 id="nomeJogador">EU</h2>
+                <button onclick="alterarNome()">Alterar Nome</button>
                 <h3>
                     Palitos: <span id="qtdeEu">3</span>
                 </h3>
-                <button>Jogar</button>
+                <button onclick="clicouBotaoJogar()">Jogar</button>
             </td>
             <td class="box">
                 <h2>Computador</h2>
@@ -39,12 +40,19 @@
 
     <script>
 
-        let nome = prompt("Digite seu nome:")
-        console.log("nome: ",nome)
+        //let nome = prompt("Digite seu nome:")
+        //console.log("nome: ",nome)
 
-        let elem = document.getElementById("nomeJogador")
-        elem.innerText = nome
-        console.log("elem", elem)
+
+        function clicouBotaoJogar() {
+            console.log("Estou aqui....")
+        }
+
+        function alterarNome() {
+            let elem = document.getElementById("nomeJogador")
+            elem.innerText = prompt("Digite seu nome:")
+            console.log("elem", elem)
+        }
 
     </script>
 </body>
