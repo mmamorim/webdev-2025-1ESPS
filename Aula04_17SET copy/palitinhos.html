@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo dos Palitinhos</title>
+    <style>
+        .box {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Jogo dos Palitinhos</h1>
+    Seu Nome:
+    <input type="text" id="cxaNome" />
+    <button onclick="alterarNome()">Alterar Nome</button>
+
+    <table>
+        <tr>
+            <td class="box">
+                <h2 id="nomeJogador">EU</h2>
+                <h3>
+                    Palitos: <span id="qtdeEu">3</span>
+                </h3>
+                <button onclick="clicouBotaoJogar()">Jogar</button>
+            </td>
+            <td class="box">
+                <h2>Computador</h2>
+                <h3>
+                    Palitos: <span id="qtdeComp">3</span>
+                </h3>
+                <button>Jogar</button>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+
+        function clicouBotaoJogar() {
+            console.log("Estou aqui....")
+        }
+
+        function alterarNome() {
+            let elemInput = document.getElementById("cxaNome")
+            let elemH2 = document.getElementById("nomeJogador")
+            let nome = elemInput.value
+            elemH2.innerText = nome 
+        }
+
+    </script>
+</body>
+
+</html>
