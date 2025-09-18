@@ -43,15 +43,43 @@
 
     <script>
 
+        let nome
+        let qtdeComp = 3
+        let qtdeJog = 3
+
+
         function clicouBotaoJogar() {
             console.log("Estou aqui....")
+            let qtdeSeparaJog = prompt("Digite quanto separar?")
+            let qtdePalpipeJog = prompt("Digite seu palpite")
+            qtdeSeparaJog = parseInt(qtdeSeparaJog)
+            qtdePalpipeJog = parseInt(qtdePalpipeJog)
+
+            let qtdeSeparaComp = parseInt(Math.random() * 10) % (qtdeComp + 1)
+            let qtdePalpipeComp = qtdeSeparaComp + parseInt(Math.random() * 10) % (qtdeJog + 1)
+
+            let total = qtdeSeparaComp + qtdeSeparaJog
+            if (qtdePalpipeJog == total) {
+                console.log(nome + " GANHOU!");
+            } else {
+                if (qtdePalpipeComp == total) {
+                    console.log("COMPUTADOR GANHOU!");
+                } else {
+                    console.log("NINGUEM GANHOU!");
+                }
+            }
+            console.log("qtdeSeparaJog", qtdeSeparaJog);
+            console.log("qtdePalpipeJog", qtdePalpipeJog);
+            console.log("qtdeSeparaComp", qtdeSeparaComp);
+            console.log("qtdePalpipeComp", qtdePalpipeComp);
+            
         }
 
         function alterarNome() {
             let elemInput = document.getElementById("cxaNome")
             let elemH2 = document.getElementById("nomeJogador")
-            let nome = elemInput.value
-            elemH2.innerText = nome 
+            nome = elemInput.value
+            elemH2.innerText = nome
         }
 
     </script>
