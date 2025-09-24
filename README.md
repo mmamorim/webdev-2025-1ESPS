@@ -17,4 +17,6 @@
     * A Revanche do Jogo dos palitinhos
 * [Aula 04](./Aula04_17SET/) (17/09) - Javascript - Desvios Condicionais
     * O Retorno do Jogo dos palitinhos
+* [Aula 05](./Aula05_24SET/) (24/09) - Javascript - Funções
+    * Jogo dos palitinhos - Última chance
 
