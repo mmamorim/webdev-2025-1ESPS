@@ -52,6 +52,26 @@ if (nota >= 9) {
 } else {
   console.log("Reprovado.");
 }
+
+if (nota >= 9) {
+  console.log("Excelente!");
+} else {
+  if (nota >= 6) {
+    console.log("Aprovado.");
+  } else {
+    console.log("Reprovado.");
+  }
+}
+  
+if (nota >= 9) {
+  console.log("Excelente!");
+}
+if (nota >= 6 && nota < 9) {
+    console.log("Aprovado.");
+} 
+if (nota < 6) {
+    console.log("Reprovado.");
+}
 ~~~
 
 ## Operador ternário `(? :)`
@@ -68,6 +88,12 @@ Exemplo:
 ~~~js
 let idade = 20;
 let mensagem = idade >= 18 ? "Maior de idade" : "Menor de idade";
+
+if(idade>=18) {
+  mensagem = "Maior de idade"
+} else {
+  mensagem = "Menor de idade"
+}
 console.log(mensagem);
 ~~~
 

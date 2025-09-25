@@ -40,13 +40,18 @@
             </td>
         </tr>
     </table>
+    <h2 id="cxaMsg">
+        Mensagem:
+    </h2>
 
     <script>
 
         let nome
         let qtdeComp = 3
         let qtdeJog = 3
-
+        let elemQtdeEu = document.getElementById("qtdeEu")
+        let elemQtdeComp = document.getElementById("qtdeComp")
+        let elemCxaMsg = document.getElementById("cxaMsg")
 
         function clicouBotaoJogar() {
             console.log("Estou aqui....")
@@ -61,18 +66,25 @@
             let total = qtdeSeparaComp + qtdeSeparaJog
             if (qtdePalpipeJog == total) {
                 console.log(nome + " GANHOU!");
+                elemCxaMsg.innerText = nome + " GANHOU!"
+                qtdeJog--
+                elemQtdeEu.innerText = qtdeJog
             } else {
                 if (qtdePalpipeComp == total) {
                     console.log("COMPUTADOR GANHOU!");
+                    elemCxaMsg.innerText = "COMPUTADOR GANHOU!"
+                    qtdeComp--
+                    elemQtdeComp.innerText = qtdeComp
                 } else {
                     console.log("NINGUEM GANHOU!");
+                    elemCxaMsg.innerText = "NINGUEM GANHOU!"
                 }
             }
             console.log("qtdeSeparaJog", qtdeSeparaJog);
             console.log("qtdePalpipeJog", qtdePalpipeJog);
             console.log("qtdeSeparaComp", qtdeSeparaComp);
             console.log("qtdePalpipeComp", qtdePalpipeComp);
-            
+
         }
 
         function alterarNome() {
