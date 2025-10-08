@@ -19,4 +19,6 @@
     * O Retorno do Jogo dos palitinhos
 * [Aula 05](./Aula05_24SET/) (24/09) - Javascript - Funções
     * Jogo dos palitinhos - Última chance
-
+* Aula06 - (01/10) - EVENTO
+* [Aula 07](./Aula07_08OUT/) (08/10) - Javascript 
+    * Laços, Vetores e Funções
