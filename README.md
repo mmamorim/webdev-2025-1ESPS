@@ -22,3 +22,5 @@
 * Aula06 - (01/10) - EVENTO
 * [Aula 07](./Aula07_08OUT/) (08/10) - Javascript 
     * Laços, Vetores e Funções
+* [Aula 08](./Aula08_15OUT/) (15/10) - Javascript 
+    * Vetores e Funções
