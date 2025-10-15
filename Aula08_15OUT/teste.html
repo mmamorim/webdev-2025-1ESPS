@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 08</title>
 </head>
+
 <body>
-    
+
     <h1>Aula 08</h1>
 
     <script>
 
+        function geraNome() {
+            let nomes = ['Ana', 'Bia', 'João', 'Euclides', 'Paulo', "Sergio", "Gustavo", "Anderson", "Flávio"]
+            let sobrenomes = ['Alface', 'Beterraba', 'Cebola', 'Silva']
+            //for(let i=0; i < nomes.length; i++) {
+            //    console.log("Bom dia", nomes[i]);
+            //}
+
+            let pos = Math.floor(Math.random() * nomes.length) % nomes.length
+            let nome = nomes[pos]
+            pos = Math.floor(Math.random() * 10000) % sobrenomes.length
+            let sobrenome = sobrenomes[pos]
+
+            return nome + " " + sobrenome
+        }
+
+        console.log("Bom dia "+geraNome());
+        console.log("Bom dia "+geraNome());
+        console.log("Bom dia "+geraNome());
+        console.log("Bom dia "+geraNome());
+        console.log("Bom dia "+geraNome());
+        console.log("Bom dia "+geraNome());
+        
+
 
     </script>
 </body>
+
 </html>
