@@ -24,3 +24,5 @@
     * Laços, Vetores e Funções
 * [Aula 08](./Aula08_15OUT/) (15/10) - Javascript 
     * Vetores e Funções
+* [Aula 09](./Aula09_22OUT/) (22/10) - Javascript 
+    * Funções
