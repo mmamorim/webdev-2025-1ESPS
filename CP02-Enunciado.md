@@ -2,14 +2,10 @@
 
 # Web Development 2025/2
 
-| Checkpoint | 5 | ```CURSO:``` | ENGENHARIA DE SOFTWARE |
+| Checkpoint | 2 | ```CURSO:``` | ENGENHARIA DE SOFTWARE |
 |---|---|---|---|
 | ```DISCIPLINA:``` | WEB DEVELOPMENT | ```PROFESSOR:``` | Marcelo Amorim |
 
-
-# ✨💰 O Desafio das Moedas 
-
----
 
 # ✨ Desafio: Criptografia Clássica em JavaScript
 
@@ -19,7 +15,7 @@ Implementar quatro das cifras mais importantes da história da criptografia para
 
 ## Requisitos Gerais
 
-1.  **Funções Puras:** Todas as funções devem usar apenas os recursos disponíveis no javascript puro, sem usar bibliotecas externas.
+1.  **Funções Javascript Vanilla:** Todas as funções devem usar apenas os recursos disponíveis no javascript puro, sem usar bibliotecas externas.
 2.  **Alfabeto:** Considere apenas as 26 letras do alfabeto inglês (A-Z, a-z).
 3.  **Tratamento de Não-Letras:** Espaços, números e pontuações devem ser mantidos inalterados no texto cifrado.
 4.  **Caixa (Case):** O *case* (maiúsculo/minúsculo) das letras deve ser preservado.
@@ -184,7 +180,8 @@ const chaveV = "CHAVE";
 const codificadoV = cifrarVigenere("Enigma!", chaveV, 'codificar'); 
 console.log(codificadoV); // Ex: "Gñlgnx!"
 console.log(cifrarVigenere(codificadoV, chaveV, 'decodificar')); // Esperado: "Enigma!"
-RSA (Obriga a usar todas as funções):
+
+// RSA (Usar a função gerarChavesRSA_Didaticas):
 
 const PRIMO_1 = 17;
 const PRIMO_2 = 19;
