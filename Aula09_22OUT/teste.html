@@ -9,12 +9,43 @@
 
 <body>
 
-    <h1>Aula 08</h1>
+    <h1>Aula 09</h1>
 
     <script>
+
+        function caixa(texto, char) {
+            let linha = "+"+char
+            for(let i=0; i < texto.length; i++) {
+                linha = linha + char
+            }
+            linha = linha + char + "+"
+            console.log(linha);
+            console.log("| "+texto+" |");
+            console.log(linha);
+            
+        }
+
+        function frutaEmoji(nomeDaFruta) {
+            if(nomeDaFruta == "morango") {
+                return "🍓"
+            }
+            if(nomeDaFruta == "limão") {
+                return "🍋‍🟩"
+            }
+            if(nomeDaFruta == "maçã") {
+                return "🍎"
+            }
+        }
+
+        caixa("Ana", "*")
+        caixa("oi gente", "-")
+
+        //let emoji = frutaEmoji("limão")
+        //console.log(emoji);
+        console.log(frutaEmoji("maçã"));
+        console.log(frutaEmoji("morango"));
+        console.log(frutaEmoji("limão"));
         
-
-
     </script>
 </body>
 
