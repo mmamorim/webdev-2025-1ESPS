@@ -26,3 +26,5 @@
     * Vetores e Funções
 * [Aula 09](./Aula09_22OUT/) (22/10) - Javascript 
     * Funções
+* [Aula 10](./Aula10_29OUT/) (29/10)  
+    * Dúvidas CP2
